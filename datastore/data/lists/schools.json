@@ -1,0 +1,492 @@
+{
+    "Applewood Heights S.S.": {
+        "logo": "applewood_heights_s_s_.svg",
+        "site": "https://applewoodheights.peelschools.org/",
+        "name": "Applewood Heights S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/8LoQo4xMQqy"
+    },
+    "Applewood School": {
+        "logo": "applewood_school.svg",
+        "site": "https://applewoodacres.peelschools.org/",
+        "name": "Applewood School",
+        "classification": "",
+        "map": "https://goo.gl/maps/sXZwgy7AJRH2"
+    },
+    "Ascension of Our Lord C.S.S.": {
+        "logo": "ascension_of_our_lord_c_s_s_.jpg",
+        "site": "https://www.dpcdsb.org/ASCEN",
+        "name": "Ascension of Our Lord C.S.S.",
+        "classification": "AA",
+        "map": "https://goo.gl/maps/769999RgLL12"
+    },
+    "Blyth Academy": {
+        "logo": "blyth_academy.svg",
+        "site": "https://blytheducation.com/blyth-academy/mississauga/",
+        "name": "Blyth Academy",
+        "classification": "A",
+        "map": "https://goo.gl/maps/JiUJCtr3yp52"
+    },
+    "Bramalea S.S.": {
+        "logo": "bramalea_s_s_.svg",
+        "site": "https://bramalea.peelschools.org/",
+        "name": "Bramalea S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/cKKkeuusMst"
+    },
+    "Brampton Centennial S.S.": {
+        "logo": "brampton_centennial_s_s_.svg",
+        "site": "https://bramptoncentennial.peelschools.org/",
+        "name": "Brampton Centennial S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/6E5ZYJK7qxT2"
+    },
+    "Brampton Christian Academy": {
+        "logo": "brampton_christian_academy.png",
+        "site": "http://www.bramptoncs.org/",
+        "name": "Brampton Christian Academy",
+        "classification": "A",
+        "map": "https://goo.gl/maps/VtbKt9qsfXN2"
+    },
+    "Bronte College": {
+        "logo": "bronte_college.png",
+        "site": "http://www.brontecollege.ca/",
+        "name": "Bronte College",
+        "classification": "A",
+        "map": "https://goo.gl/maps/mjBNdn4hiZr"
+    },
+    "Cardinal Ambrozic C.S.S.": {
+        "logo": "cardinal_ambrozic_c_s_s_.jpg",
+        "site": "https://www3.dpcdsb.org/AMBRO",
+        "name": "Cardinal Ambrozic C.S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/5f4KfUZQo9z"
+    },
+    "Cardinal Leger C.S.S.": {
+        "logo": "cardinal_leger_c_s_s_.jpg",
+        "site": "http://www.dpcdsb.org/leger",
+        "name": "Cardinal Leger C.S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/ubjkSP9NQxP2"
+    },
+    "Castlebrooke S.S.": {
+        "logo": "castlebrooke_s_s_.svg",
+        "site": "https://castlebrooke.peelschools.org/",
+        "name": "Castlebrooke S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/gXVcr5djCm12"
+    },
+    "Cawthra Park S.S.": {
+        "logo": "cawthra_park_s_s_.svg",
+        "site": "https://cawthrapark.peelschools.org/",
+        "name": "Cawthra Park S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/81qY2SsQFrr"
+    },
+    "Central Peel S.S.": {
+        "logo": "central_peel_s_s_.svg",
+        "site": "https://centralpeel.peelschools.org/",
+        "name": "Central Peel S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/B45RrVnxgrr"
+    },
+    "Chinguacousy S.S.": {
+        "logo": "chinguacousy_s_s_.svg",
+        "site": "https://chinguacousy.peelschools.org/",
+        "name": "Chinguacousy S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/Lxmk9H4jG9m"
+    },
+    "Clarkson S.S.": {
+        "logo": "clarkson_s_s_.svg",
+        "site": "https://clarksonss.peelschools.org/",
+        "name": "Clarkson S.S.",
+        "classification": "AA",
+        "map": "https://goo.gl/maps/mtmUH358f3m"
+    },
+    "David Suzuki S.S.": {
+        "logo": "david_suzuki_s_s_.svg",
+        "site": "https://davidsuzuki.peelschools.org/",
+        "name": "David Suzuki S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/p3ysKmnRCXP2"
+    },
+    "Erindale S.S.": {
+        "logo": "erindale_s_s_.svg",
+        "site": "https://erindale.peelschools.org/",
+        "name": "Erindale S.S.",
+        "classification": "AA",
+        "map": "https://goo.gl/maps/fwpHPhESrRk"
+    },
+    "Father Michael Goetz C.S.S.": {
+        "logo": "father_michael_goetz_c_s_s_.jpg",
+        "site": "http://www.dpcdsb.org/GOETZ",
+        "name": "Father Michael Goetz C.S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/wktNLZRFXiF2"
+    },
+    "Fletchers Meadow S.S.": {
+        "logo": "fletchers_meadow_s_s_.svg",
+        "site": "https://fletchersmeadow.peelschools.org/",
+        "name": "Fletchers Meadow S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/6xmZfR8j62x"
+    },
+    "Glenforest S.S.": {
+        "logo": "glenforest_s_s_.svg",
+        "site": "https://glenforest.peelschools.org/",
+        "name": "Glenforest S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/9vYTbH6etzL2"
+    },
+    "Harold M. Brathwaite S.S.": {
+        "logo": "harold_m__brathwaite_s_s_.svg",
+        "site": "https://haroldmbrathwaite.peelschools.org/",
+        "name": "Harold M. Brathwaite S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/cdiK8wNT1w52"
+    },
+    "Heart Lake S.S.": {
+        "logo": "heart_lake_s_s_.svg",
+        "site": "https://heartlake.peelschools.org/",
+        "name": "Heart Lake S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/jJRaxZF4a7F2"
+    },
+    "Holy Name of Mary C.S.S.": {
+        "logo": "holy_name_of_mary_c_s_s_.jpg",
+        "site": "http://www.dpcdsb.org/hnmry",
+        "name": "Holy Name of Mary C.S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/3Yz7M5sCnhD2"
+    },
+    "Humberview S.S.": {
+        "logo": "humberview_s_s_.svg",
+        "site": "https://humberview.peelschools.org/",
+        "name": "Humberview S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/KxdAs4Rshsj"
+    },
+    "Iona C.S.S.": {
+        "logo": "iona_c_s_s_.jpg",
+        "site": "http://www.dpcdsb.org/ionas",
+        "name": "Iona C.S.S.",
+        "classification": "AA",
+        "map": "https://goo.gl/maps/88HgXUFEZuo"
+    },
+    "Jean Augustine S.S.": {
+        "logo": "jean_augustine_s_s_.svg",
+        "site": "https://jeanaugustine.peelschools.org/",
+        "name": "Jean Augustine S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/1rTLtKabMPu"
+    },
+    "Jeunes sans Frontieres": {
+        "logo": "jeunes_sans_frontieres.svg",
+        "site": "http://csviamonde.ca/ecoles/jeunessansfrontieres/Pages/default.aspx",
+        "name": "Jeunes sans Frontieres",
+        "classification": "A",
+        "map": "https://goo.gl/maps/mPc2sK18LFp"
+    },
+    "John Cabot C.S.S.": {
+        "logo": "john_cabot_c_s_s_.jpg",
+        "site": "http://www.dpcdsb.org/CABOT",
+        "name": "John Cabot C.S.S.",
+        "classification": "AA",
+        "map": "https://goo.gl/maps/Q1DbVfpvafx"
+    },
+    "John Fraser S.S.": {
+        "logo": "john_fraser_s_s_.svg",
+        "site": "https://johnfraser.peelschools.org/",
+        "name": "John Fraser S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/vcU3eZgsTvk"
+    },
+    "Judith Nyman S.S.": {
+        "logo": "judith_nyman_s_s_.svg",
+        "site": "https://judithnyman.peelschools.org/",
+        "name": "Judith Nyman S.S.",
+        "classification": "AA",
+        "map": "https://goo.gl/maps/hhbA5MFJ1Hz"
+    },
+    "Lincoln M. Alexander S.S.": {
+        "logo": "lincoln_m__alexander_s_s_.svg",
+        "site": "https://lincolnmalexander.peelschools.org/",
+        "name": "Lincoln M. Alexander S.S.",
+        "classification": "AA",
+        "map": "https://goo.gl/maps/2fyW1hc4aMv"
+    },
+    "Lorne Park S.S.": {
+        "logo": "lorne_park_s_s_.svg",
+        "site": "https://lorneparkss.peelschools.org/",
+        "name": "Lorne Park S.S.",
+        "classification": "AA",
+        "map": "https://goo.gl/maps/qKqEListaiy"
+    },
+    "Louise Arbour S.S.": {
+        "logo": "louise_arbour_s_s_.svg",
+        "site": "https://louisearbour.peelschools.org/",
+        "name": "Louise Arbour S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/sFdyUgVLx3z"
+    },
+    "Loyola C.S.S.": {
+        "logo": "loyola_c_s_s_.jpg",
+        "site": "http://www.dpcdsb.org/LOYOL",
+        "name": "Loyola C.S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/hxuJhG8evYN2"
+    },
+    "Mayfield S.S.": {
+        "logo": "mayfield_s_s_.svg",
+        "site": "https://mayfield.peelschools.org/",
+        "name": "Mayfield S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/Fmwxf9rKQhs"
+    },
+    "Meadowvale S.S.": {
+        "logo": "meadowvale_s_s_.svg",
+        "site": "https://meadowvale.peelschools.org/",
+        "name": "Meadowvale S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/M1q8G3uMUTS2"
+    },
+    "Mentor College": {
+        "logo": "mentor_college.svg",
+        "site": "http://www.mentorcollege.edu/",
+        "name": "Mentor College",
+        "classification": "AA",
+        "map": "https://goo.gl/maps/frZa7zn4wRU2"
+    },
+    "Mississauga S.S.": {
+        "logo": "mississauga_s_s_.svg",
+        "site": "https://mississauga.peelschools.org/",
+        "name": "Mississauga S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/DzqW22HSDtH2"
+    },
+    "North Park S.S.": {
+        "logo": "north_park_s_s_.svg",
+        "site": "https://northpark.peelschools.org/",
+        "name": "North Park S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/rMsb1sXr7A52"
+    },
+    "Notre Dame C.S.S.": {
+        "logo": "notre_dame_c_s_s_.png",
+        "site": "http://www.dpcdsb.org/NDAME",
+        "name": "Notre Dame C.S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/4Ly4Cvdy4PF2"
+    },
+    "Olive Grove High School": {
+        "logo": "olive_grove_high_school.png",
+        "site": "https://www.olivegroveschool.ca/high-school",
+        "name": "Olive Grove High School",
+        "classification": "A",
+        "map": "https://goo.gl/maps/rnijhKf1Ei27ZpDW7"
+    },
+    "Our Lady of Mount Carmel": {
+        "logo": "our_lady_of_mount_carmel.jpg",
+        "site": "http://www.dpcdsb.org/CARMS",
+        "name": "Our Lady of Mount Carmel",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/3bq3b8yBkMp"
+    },
+    "Parkholme School": {
+        "logo": "parkholme_school.svg",
+        "site": "https://parkholme.peelschools.org/",
+        "name": "Parkholme School",
+        "classification": "",
+        "map": "https://goo.gl/maps/SZFcWxw1Tw82"
+    },
+    "Philip Pocock C.S.S.": {
+        "logo": "philip_pocock_c_s_s_.jpg",
+        "site": "http://www.dpcdsb.org/POCOK",
+        "name": "Philip Pocock C.S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/wNuXrNhEwuC2"
+    },
+    "Philopateer Christian College": {
+        "logo": "philopateer_christian_college.png",
+        "site": "http://philopateerchristiancollege.com/",
+        "name": "Philopateer Christian College",
+        "classification": "A",
+        "map": "https://goo.gl/maps/Krmy7ZReVim"
+    },
+    "Port Credit S.S.": {
+        "logo": "port_credit_s_s_.svg",
+        "site": "https://portcredit.peelschools.org/",
+        "name": "Port Credit S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/i12DmcbY8SF2"
+    },
+    "Rick Hansen S.S.": {
+        "logo": "rick_hansen_s_s_.svg",
+        "site": "https://rickhansen.peelschools.org/",
+        "name": "Rick Hansen S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/nAwnQY2JSH22"
+    },
+    "Robert F. Hall C.S.S.": {
+        "logo": "robert_f__hall_c_s_s_.jpg",
+        "site": "http://www.dpcdsb.org/RFHAL",
+        "name": "Robert F. Hall C.S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/s4Q6EaaYP3G2"
+    },
+    "Sandalwood Heights S.S.": {
+        "logo": "sandalwood_heights_s_s_.svg",
+        "site": "https://sandalwoodheights.peelschools.org/",
+        "name": "Sandalwood Heights S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/v4vZK7xNJjP2"
+    },
+    "Sherwood Heights School": {
+        "logo": "sherwood_heights_school.gif",
+        "site": "http://www.sherwoodheights.com/",
+        "name": "Sherwood Heights School",
+        "classification": "A",
+        "map": "https://goo.gl/maps/ukGc5A2JUMnuXjVN7"
+    },
+    "St. Aloysius Gonzaga C.S.S.": {
+        "logo": "st__aloysius_gonzaga_c_s_s_.jpg",
+        "site": "http://www.dpcdsb.org/gonza",
+        "name": "St. Aloysius Gonzaga C.S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/XV6oBgYKfpp"
+    },
+    "St. Augustine C.S.S.": {
+        "logo": "st__augustine_c_s_s_.jpg",
+        "site": "http://www.dpcdsb.org/AUGST",
+        "name": "St. Augustine C.S.S.",
+        "classification": "AA",
+        "map": "https://goo.gl/maps/ugMVGLCaQ8C2"
+    },
+    "St. Edmund Campion C.S.S.": {
+        "logo": "st__edmund_campion_c_s_s_.jpg",
+        "site": "http://www.dpcdsb.org/CAMPI",
+        "name": "St. Edmund Campion C.S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/KKnqmHPp93K2"
+    },
+    "St. Francis Xavier C.S.S.": {
+        "logo": "st__francis_xavier_c_s_s_.jpg",
+        "site": "http://www.dpcdsb.org/stfxs",
+        "name": "St. Francis Xavier C.S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/46vGPKdFoSN2"
+    },
+    "St. Joan of Arc C.S.S.": {
+        "logo": "st__joan_of_arc_c_s_s_.jpg",
+        "site": "http://www.dpcdsb.org/joana",
+        "name": "St. Joan of Arc C.S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/4ZwL8erR2e62"
+    },
+    "St. Joseph C.S.S.": {
+        "logo": "st__joseph_c_s_s_.jpg",
+        "site": "http://www.dpcdsb.org/JOESS",
+        "name": "St. Joseph C.S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/6cKPQ6AyoYm"
+    },
+    "St. Marcellinus C.S.S.": {
+        "logo": "st__marcellinus_c_s_s_.jpg",
+        "site": "http://www.dpcdsb.org/marcl",
+        "name": "St. Marcellinus C.S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/1YhKBK97sYz"
+    },
+    "St. Marguerite d'Youville C.S.S.": {
+        "logo": "st__marguerite_d'youville_c_s_s_.jpg",
+        "site": "http://www.dpcdsb.org/dyouv",
+        "name": "St. Marguerite d'Youville C.S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/XGyt2FTSio32"
+    },
+    "St. Martin C.S.S.": {
+        "logo": "st__martin_c_s_s_.jpg",
+        "site": "http://www.dpcdsb.org/martn",
+        "name": "St. Martin C.S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/BFwa6v3nbKv"
+    },
+    "St. Michael C.S.S.": {
+        "logo": "st__michael_c_s_s_.jpg",
+        "site": "http://www.dpcdsb.org/michs",
+        "name": "St. Michael C.S.S.",
+        "classification": "AA",
+        "map": "https://goo.gl/maps/f2TVLnkVTTv"
+    },
+    "St. Paul C.S.S.": {
+        "logo": "st__paul_c_s_s_.jpg",
+        "site": "http://www.dpcdsb.org/pauls",
+        "name": "St. Paul C.S.S.",
+        "classification": "AA",
+        "map": "https://goo.gl/maps/FauKHzR1Cvk"
+    },
+    "St. Roch C.S.S.": {
+        "logo": "st__roch_c_s_s_.jpg",
+        "site": "http://www.dpcdsb.org/ROCHS",
+        "name": "St. Roch C.S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/HhZiArt6TRA2"
+    },
+    "St. Thomas Aquinas C.S.S.": {
+        "logo": "st__thomas_aquinas_c_s_s_.jpg",
+        "site": "http://www.dpcdsb.org/aquin",
+        "name": "St. Thomas Aquinas C.S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/iwmYqjXxwFv"
+    },
+    "Ste. Famille": {
+        "logo": "ste__famille.png",
+        "site": "http://www.ste-famille.com/",
+        "name": "Ste. Famille",
+        "classification": "AA",
+        "map": "https://goo.gl/maps/wr4HP3FYma22"
+    },
+    "Stephen Lewis S.S.": {
+        "logo": "stephen_lewis_s_s_.svg",
+        "site": "https://stephenlewis.peelschools.org/",
+        "name": "Stephen Lewis S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/fByAv7fnnWT2"
+    },
+    "Streetsville S.S.": {
+        "logo": "streetsville_s_s_.svg",
+        "site": "https://streetsville.peelschools.org/",
+        "name": "Streetsville S.S.",
+        "classification": "AA",
+        "map": "https://goo.gl/maps/e3N72xV1q3D2"
+    },
+    "T.L. Kennedy S.S.": {
+        "logo": "t_l__kennedy_s_s_.svg",
+        "site": "https://tlkennedy.peelschools.org/",
+        "name": "T.L. Kennedy S.S.",
+        "classification": "AA",
+        "map": "https://goo.gl/maps/YU32bFW6dxE2"
+    },
+    "Turner Fenton S.S.": {
+        "logo": "turner_fenton_s_s_.svg",
+        "site": "https://turnerfenton.peelschools.org/",
+        "name": "Turner Fenton S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/arMEaLhxgDw"
+    },
+    "West Credit S.S.": {
+        "logo": "west_credit_s_s_.svg",
+        "site": "https://westcredit.peelschools.org/",
+        "name": "West Credit S.S.",
+        "classification": "A",
+        "map": "https://goo.gl/maps/sNA3VN5j3mt"
+    },
+    "Woodlands S.S.": {
+        "logo": "woodlands_s_s_.svg",
+        "site": "https://thewoodlandsss.peelschools.org/",
+        "name": "Woodlands S.S.",
+        "classification": "AAA",
+        "map": "https://goo.gl/maps/6M3FPYtH4X92"
+    }
+}
