@@ -4,9 +4,9 @@ import moment from "moment";
 import qs from "qs";
 
 interface Game {
+    id: string,
     league: string,
     date: string,
-    time: string,
     awayteam: {
         name: string,
         score: string
@@ -20,6 +20,9 @@ interface Game {
 }
 
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+const fetchFirstLetters = (str: string): string => {
+    return str.split(" ").map(word => word.charAt(0)).join("")
+}
 
 // ropssaa site
 const url = "https://www.ropssaa.org/";
@@ -85,83 +88,98 @@ export const fetchLeagues = async () => {
     const $ = cheerio.load(res.data);
     
     let leaguesHTML = $("select#leagueSelect");
-    let leagues: [string, string][] = [];
+    let leagues: {[key: string]: string} = {};
     leaguesHTML.find("option").each((index, row) => {
         let i = $(row);
         let leagueId = i.attr("value") || "";
         let leagueName = i.text()
-        if (leagueId != "ALL") leagues.push([leagueId, leagueName]);
+        if (leagueId != "ALL") leagues[leagueId] = leagueName;
     });
 
     return leagues;
 }
 
-export const fetchGamesFromLeague = async (leagueId: string, leagueName: string) => {
-    const response = await ropssaaApi({
+
+export const fetchGames = async (date: moment.Moment) => {
+    const formattedDate = date.format("YYYY-MM-DD");
+    let leagues = await fetchLeagues();
+
+    const res = await ropssaaApi({
+        method: "POST",
         url: "/viewScores.php",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
         },
         data: qs.stringify({
             leagueid: "ALL",
-            dateSelect: "ALL",
+            dateSelect: formattedDate,
             schoolSelect: "ALL",
-            leagueSelect: leagueId
+            leagueSelect: "ALL"
         })
     });
-    
-    const res = await ropssaaApi({
-        url: "/printableSchedule.php",
-        params: { leagueid: leagueId, divisionid: "ALL", schoolid: "ALL" },
-        headers: {
-            "Cookie": response.headers["set-cookie"]?.join(" ")
-        }
-    });
 
-    
     const $ = cheerio.load(res.data);
-
+    
     let table = $("table");
-    let currentNote = "";
-    let games: Game[] = [];
 
-    table.find("tr").each((index, row) => {
-        if (index != 0) {
-            let tdChildren = $(row).find("td").length;
-            if (tdChildren == 8) {
-                games.push({
-                    "league": leagueName,
-                    "date": $(row).find("td").eq(0).text().trim(),
-                    "time": $(row).find("td").eq(1).text().trim(),
-                    "awayteam": {
-                        "name": $(row).find("td").eq(2).text().trim(),
-                        "score": $(row).find("td").eq(3).text().trim()
-                    },
-                    "hometeam": {
-                        "name": $(row).find("td").eq(4).text().trim(),
-                        "score": $(row).find("td").eq(5).text().trim()
-                    },
-                    "location": $(row).find("td").eq(6).text().trim(),
-                    "notes": [currentNote, $(row).find("td").eq(7).text().trim()].join(" "),
-                });
-            } else if (tdChildren == 1) {
-                currentNote = $(row).find("td").eq(0).text().trim();
+    let emptyGame: Game = {
+        id: "", league: "", date: "",
+        awayteam: {
+            name: "",
+            score: ""
+        },
+        hometeam: {
+            name: "",
+            score: ""
+        }, location: "", notes: "" };
+
+    let games: Game[] = [];
+    let game: Game = structuredClone(emptyGame);
+
+    let nextTableRow: {[key: string]: boolean} = { scoreBoard: false };
+
+    table.find("tr").each((index, tr) => {
+        if ($(tr).attr("style") != undefined) {
+            games.push(game);
+            game = structuredClone(emptyGame);
+        } else {
+            if (nextTableRow.scoreBoard) {
+                nextTableRow.scoreBoard = false;
+                let tableData = $(tr).find("td");
+                // tableData.length == 4: Game is completed
+                if (tableData.length == 4) {
+                    game.date = formattedDate;
+                    let awayHref = tableData.eq(0).find("a:not([target])");
+                    let awayParams = new URLSearchParams(awayHref.attr("href")?.split("?").at(-1));
+                    game.awayteam.name = awayHref.text().trim();
+                    game.awayteam.score = tableData.eq(1).text().trim().replace("\n", " ");
+
+                    let homeHref = tableData.eq(3).find("a:not([target])");
+                    game.hometeam.name = homeHref.text().trim();
+                    game.hometeam.score = tableData.eq(2).text().trim();
+
+                    let leagueid = awayParams.get("leagueid") || ""
+                    if (leagueid in leagues) {
+                        game.league = leagues[leagueid];
+                    }
+                    
+                    // unique id to identify between games
+                    game.id = leagueid+fetchFirstLetters(game.hometeam.name)+game.hometeam.score+fetchFirstLetters(game.awayteam.name)+game.awayteam.score
+                }
+            }
+
+            let trText = $(tr).text().toLowerCase();
+            if (trText.includes("score")) {
+                nextTableRow.scoreBoard = true;
+            } else if (trText.includes("location:") && trText.includes("notes:")) {
+                let tableData = $(tr).find("td");
+                if (tableData.length == 2) {
+                    game.location = (tableData.eq(0).text().split("Location:").at(-1) || "").trim();
+                    game.notes = (tableData.eq(1).text().split("Notes:").at(-1) || "").trim();
+                }
             }
         }
     });
 
     return games;
-}
-
-export const fetchAllGames = async () => {
-    let leagues = await fetchLeagues();
-    //let leagues = [["15", "Tier 2 Senior Boys Volleyball"]]
-    for (let i=0; i<leagues.length; i++) {
-        let league = leagues[i];
-        let leagueId = league[0];
-        let leagueName = league[1];
-        let games = await fetchGamesFromLeague(leagueId, leagueName);
-        console.log(games);
-        await sleep(1000); // robssa rate limit
-    }
 }
