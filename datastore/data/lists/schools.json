@@ -14,7 +14,7 @@
         "map": "https://goo.gl/maps/sXZwgy7AJRH2"
     },
     "Ascension of Our Lord C.S.S.": {
-        "logo": "ascension_of_our_lord_c_s_s_.jpg",
+        "logo": "ascension_of_our_lord_c_s_s_.png",
         "site": "https://www.dpcdsb.org/ASCEN",
         "name": "Ascension of Our Lord C.S.S.",
         "classification": "AA",
@@ -56,14 +56,14 @@
         "map": "https://goo.gl/maps/mjBNdn4hiZr"
     },
     "Cardinal Ambrozic C.S.S.": {
-        "logo": "cardinal_ambrozic_c_s_s_.jpg",
+        "logo": "cardinal_ambrozic_c_s_s_.png",
         "site": "https://www3.dpcdsb.org/AMBRO",
         "name": "Cardinal Ambrozic C.S.S.",
         "classification": "AAA",
         "map": "https://goo.gl/maps/5f4KfUZQo9z"
     },
     "Cardinal Leger C.S.S.": {
-        "logo": "cardinal_leger_c_s_s_.jpg",
+        "logo": "cardinal_leger_c_s_s_.png",
         "site": "http://www.dpcdsb.org/leger",
         "name": "Cardinal Leger C.S.S.",
         "classification": "AAA",
@@ -119,7 +119,7 @@
         "map": "https://goo.gl/maps/fwpHPhESrRk"
     },
     "Father Michael Goetz C.S.S.": {
-        "logo": "father_michael_goetz_c_s_s_.jpg",
+        "logo": "father_michael_goetz_c_s_s_.png",
         "site": "http://www.dpcdsb.org/GOETZ",
         "name": "Father Michael Goetz C.S.S.",
         "classification": "AAA",
@@ -154,7 +154,7 @@
         "map": "https://goo.gl/maps/jJRaxZF4a7F2"
     },
     "Holy Name of Mary C.S.S.": {
-        "logo": "holy_name_of_mary_c_s_s_.jpg",
+        "logo": "holy_name_of_mary_c_s_s_.png",
         "site": "http://www.dpcdsb.org/hnmry",
         "name": "Holy Name of Mary C.S.S.",
         "classification": "AAA",
@@ -168,7 +168,7 @@
         "map": "https://goo.gl/maps/KxdAs4Rshsj"
     },
     "Iona C.S.S.": {
-        "logo": "iona_c_s_s_.jpg",
+        "logo": "iona_c_s_s_.png",
         "site": "http://www.dpcdsb.org/ionas",
         "name": "Iona C.S.S.",
         "classification": "AA",
@@ -189,7 +189,7 @@
         "map": "https://goo.gl/maps/mPc2sK18LFp"
     },
     "John Cabot C.S.S.": {
-        "logo": "john_cabot_c_s_s_.jpg",
+        "logo": "john_cabot_c_s_s_.png",
         "site": "http://www.dpcdsb.org/CABOT",
         "name": "John Cabot C.S.S.",
         "classification": "AA",
@@ -231,7 +231,7 @@
         "map": "https://goo.gl/maps/sFdyUgVLx3z"
     },
     "Loyola C.S.S.": {
-        "logo": "loyola_c_s_s_.jpg",
+        "logo": "loyola_c_s_s_.png",
         "site": "http://www.dpcdsb.org/LOYOL",
         "name": "Loyola C.S.S.",
         "classification": "AAA",
@@ -287,7 +287,7 @@
         "map": "https://goo.gl/maps/rnijhKf1Ei27ZpDW7"
     },
     "Our Lady of Mount Carmel": {
-        "logo": "our_lady_of_mount_carmel.jpg",
+        "logo": "our_lady_of_mount_carmel.png",
         "site": "http://www.dpcdsb.org/CARMS",
         "name": "Our Lady of Mount Carmel",
         "classification": "AAA",
@@ -301,7 +301,7 @@
         "map": "https://goo.gl/maps/SZFcWxw1Tw82"
     },
     "Philip Pocock C.S.S.": {
-        "logo": "philip_pocock_c_s_s_.jpg",
+        "logo": "philip_pocock_c_s_s_.png",
         "site": "http://www.dpcdsb.org/POCOK",
         "name": "Philip Pocock C.S.S.",
         "classification": "AAA",
@@ -329,7 +329,7 @@
         "map": "https://goo.gl/maps/nAwnQY2JSH22"
     },
     "Robert F. Hall C.S.S.": {
-        "logo": "robert_f__hall_c_s_s_.jpg",
+        "logo": "robert_f__hall_c_s_s_.png",
         "site": "http://www.dpcdsb.org/RFHAL",
         "name": "Robert F. Hall C.S.S.",
         "classification": "AAA",
@@ -350,91 +350,91 @@
         "map": "https://goo.gl/maps/ukGc5A2JUMnuXjVN7"
     },
     "St. Aloysius Gonzaga C.S.S.": {
-        "logo": "st__aloysius_gonzaga_c_s_s_.jpg",
+        "logo": "st__aloysius_gonzaga_c_s_s_.png",
         "site": "http://www.dpcdsb.org/gonza",
         "name": "St. Aloysius Gonzaga C.S.S.",
         "classification": "AAA",
         "map": "https://goo.gl/maps/XV6oBgYKfpp"
     },
     "St. Augustine C.S.S.": {
-        "logo": "st__augustine_c_s_s_.jpg",
+        "logo": "st__augustine_c_s_s_.png",
         "site": "http://www.dpcdsb.org/AUGST",
         "name": "St. Augustine C.S.S.",
         "classification": "AA",
         "map": "https://goo.gl/maps/ugMVGLCaQ8C2"
     },
     "St. Edmund Campion C.S.S.": {
-        "logo": "st__edmund_campion_c_s_s_.jpg",
+        "logo": "st__edmund_campion_c_s_s_.png",
         "site": "http://www.dpcdsb.org/CAMPI",
         "name": "St. Edmund Campion C.S.S.",
         "classification": "AAA",
         "map": "https://goo.gl/maps/KKnqmHPp93K2"
     },
     "St. Francis Xavier C.S.S.": {
-        "logo": "st__francis_xavier_c_s_s_.jpg",
+        "logo": "st__francis_xavier_c_s_s_.png",
         "site": "http://www.dpcdsb.org/stfxs",
         "name": "St. Francis Xavier C.S.S.",
         "classification": "AAA",
         "map": "https://goo.gl/maps/46vGPKdFoSN2"
     },
     "St. Joan of Arc C.S.S.": {
-        "logo": "st__joan_of_arc_c_s_s_.jpg",
+        "logo": "st__joan_of_arc_c_s_s_.png",
         "site": "http://www.dpcdsb.org/joana",
         "name": "St. Joan of Arc C.S.S.",
         "classification": "AAA",
         "map": "https://goo.gl/maps/4ZwL8erR2e62"
     },
     "St. Joseph C.S.S.": {
-        "logo": "st__joseph_c_s_s_.jpg",
+        "logo": "st__joseph_c_s_s_.png",
         "site": "http://www.dpcdsb.org/JOESS",
         "name": "St. Joseph C.S.S.",
         "classification": "AAA",
         "map": "https://goo.gl/maps/6cKPQ6AyoYm"
     },
     "St. Marcellinus C.S.S.": {
-        "logo": "st__marcellinus_c_s_s_.jpg",
+        "logo": "st__marcellinus_c_s_s_.png",
         "site": "http://www.dpcdsb.org/marcl",
         "name": "St. Marcellinus C.S.S.",
         "classification": "AAA",
         "map": "https://goo.gl/maps/1YhKBK97sYz"
     },
     "St. Marguerite d'Youville C.S.S.": {
-        "logo": "st__marguerite_d'youville_c_s_s_.jpg",
+        "logo": "st__marguerite_d'youville_c_s_s_.png",
         "site": "http://www.dpcdsb.org/dyouv",
         "name": "St. Marguerite d'Youville C.S.S.",
         "classification": "AAA",
         "map": "https://goo.gl/maps/XGyt2FTSio32"
     },
     "St. Martin C.S.S.": {
-        "logo": "st__martin_c_s_s_.jpg",
+        "logo": "st__martin_c_s_s_.png",
         "site": "http://www.dpcdsb.org/martn",
         "name": "St. Martin C.S.S.",
         "classification": "AAA",
         "map": "https://goo.gl/maps/BFwa6v3nbKv"
     },
     "St. Michael C.S.S.": {
-        "logo": "st__michael_c_s_s_.jpg",
+        "logo": "st__michael_c_s_s_.png",
         "site": "http://www.dpcdsb.org/michs",
         "name": "St. Michael C.S.S.",
         "classification": "AA",
         "map": "https://goo.gl/maps/f2TVLnkVTTv"
     },
     "St. Paul C.S.S.": {
-        "logo": "st__paul_c_s_s_.jpg",
+        "logo": "st__paul_c_s_s_.png",
         "site": "http://www.dpcdsb.org/pauls",
         "name": "St. Paul C.S.S.",
         "classification": "AA",
         "map": "https://goo.gl/maps/FauKHzR1Cvk"
     },
     "St. Roch C.S.S.": {
-        "logo": "st__roch_c_s_s_.jpg",
+        "logo": "st__roch_c_s_s_.png",
         "site": "http://www.dpcdsb.org/ROCHS",
         "name": "St. Roch C.S.S.",
         "classification": "AAA",
         "map": "https://goo.gl/maps/HhZiArt6TRA2"
     },
     "St. Thomas Aquinas C.S.S.": {
-        "logo": "st__thomas_aquinas_c_s_s_.jpg",
+        "logo": "st__thomas_aquinas_c_s_s_.png",
         "site": "http://www.dpcdsb.org/aquin",
         "name": "St. Thomas Aquinas C.S.S.",
         "classification": "AAA",
