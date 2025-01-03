@@ -1,4 +1,4 @@
-import { fetchStoredSchools, logoStore } from "../lib/datastoreManager";
+import { fetchStoredSchools, fetchTodaysPostedGames, logoStore, storeTodaysPostedGames } from "../lib/datastoreManager";
 import { fetchGames } from "../lib/ropssaa";
 import moment from "moment";
 import sharp from "sharp";
@@ -17,12 +17,15 @@ const logoHeight = 100;
 
 (async () => {
     let schools = fetchStoredSchools();
+    let todaysPostedGames = fetchTodaysPostedGames();
+    let postedGames = [];
     let games = await fetchGames(moment("2024-12-19"));
+    //let games = await fetchGames(moment());
     
     for (let i=0; i<games.length; i++) {
         let game = games[i];
 
-        if (game.date != "" && game.hometeam.name in schools && game.awayteam.name in schools) {
+        if (game.date != "" && game.hometeam.name in schools && game.awayteam.name in schools && !(game.id in todaysPostedGames)) {
             let homeTeamImg = await sharp(path.join(logoStore, schools[game.hometeam.name].logo)).resize(logoWidth, logoHeight, {fit: "inside"}).toBuffer();
             let homeTeamImgMetaData = await sharp(homeTeamImg).metadata();
             let awayTeamImg = await sharp(path.join(logoStore, schools[game.awayteam.name].logo)).resize(logoWidth, logoHeight, {fit: "inside"}).toBuffer();
@@ -76,12 +79,13 @@ const logoHeight = 100;
                 }
             })
             .composite(compositeInputs)
-            .toFile("test.png", (err, info) => {
+            .toFile("test/"+game.id+".png", (err, info) => {
                 console.log("Err:", err, "Info:", info)
             });
-            
+
+            postedGames.push(game);
         }
-        console.log(game.id);
-        break;
     }
+
+    storeTodaysPostedGames(postedGames);
 })();

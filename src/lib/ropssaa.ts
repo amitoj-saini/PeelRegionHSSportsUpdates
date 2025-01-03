@@ -3,7 +3,7 @@ import * as cheerio from "cheerio";
 import moment from "moment";
 import qs from "qs";
 
-interface Game {
+export interface Game {
     id: string,
     league: string,
     date: string,
@@ -19,7 +19,6 @@ interface Game {
     notes: string
 }
 
-const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 const fetchFirstLetters = (str: string): string => {
     return str.split(" ").map(word => word.charAt(0)).join("")
 }
