@@ -3,6 +3,7 @@ import { createImagesFromGames } from "../lib/createImages";
 import { postToInstagram } from "../lib/postContent";
 import { fetchGames } from "../lib/ropssaa";
 import moment from "moment";
+import fs from "fs";
 
 (async () => {
     let momentToday = moment();
@@ -22,6 +23,7 @@ import moment from "moment";
         console.log("Posting: ", caption, e.image);
         postToInstagram(e.image, caption);
         console.log("\n"); 
-        
+        // delete the file before continuing
+        fs.unlinkSync(e.image);
     });
 })();
