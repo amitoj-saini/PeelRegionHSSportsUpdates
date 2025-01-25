@@ -1,6 +1,5 @@
-import { Cookie } from "puppeteer";
 import { Game } from "./ropssaa";
-import moment from "moment";
+import moment, { Moment } from "moment";
 import * as path from "path";
 import * as fs from "fs";
 
@@ -30,8 +29,8 @@ const fetchStoredSchools = () => {
     return data;
 };
 
-const fetchTodaysPostedGames = () => {
-    const date = moment().format("YYYY-MM-DD");
+const fetchTodaysPostedGames = (momentObj: Moment) => {
+    const date = momentObj.format("YYYY-MM-DD");
     let todaysGames : {[ key: string ]: Game} = {};
     try {
         todaysGames = JSON.parse(fs.readFileSync(path.join(gamesStore, `${date}.json`), "utf-8"))
@@ -40,29 +39,15 @@ const fetchTodaysPostedGames = () => {
     return todaysGames;
 }
 
-const storeTodaysPostedGames = (games: Game[]) => {
-    const date = moment().format("YYYY-MM-DD");
+const storeTodaysPostedGames = (games: Game[], momentObj: Moment) => {
+    const date = momentObj.format("YYYY-MM-DD");
     let todaysGames : {[ key: string ]: Game} = Object.fromEntries(
         games.map(game => [game.id, game])
     )
 
-    todaysGames = Object.assign(todaysGames, fetchTodaysPostedGames());
+    todaysGames = Object.assign(todaysGames, fetchTodaysPostedGames(momentObj));
     
     fs.writeFileSync(path.join(gamesStore, `${date}.json`), JSON.stringify(todaysGames, null, 4));
 }
 
-const fetchStoredCookies = () => {
-    let cookies : Cookie[] = [];
-
-    try {
-        cookies = JSON.parse(fs.readFileSync(path.join(otherData, "cookies.json"), "utf-8"));
-    } catch {};
-
-    return cookies;
-}
-
-const storeFetchedCookies = (cookies: Cookie[]) => {    
-    fs.writeFileSync(path.join(otherData, "cookies.json"), JSON.stringify(cookies));
-}
-
-export {fetchStoredSchools, fetchTodaysPostedGames, storeTodaysPostedGames, fetchStoredCookies, storeFetchedCookies, logoStore, otherData};
+export {fetchStoredSchools, fetchTodaysPostedGames, storeTodaysPostedGames, School, logoStore, otherData};

@@ -1,1 +1,2 @@
 # ROPPSSAA Automator
+Uses the Region Of Peel Secondary School Atheltic Assosiation internal API and grabs all games listed and posts them on instagram so that people can share their games on stories etc.

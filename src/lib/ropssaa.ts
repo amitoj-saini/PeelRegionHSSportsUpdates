@@ -163,7 +163,7 @@ export const fetchGames = async (date: moment.Moment) => {
                     }
                     
                     // unique id to identify between games
-                    game.id = leagueid+fetchFirstLetters(game.hometeam.name)+game.hometeam.score+fetchFirstLetters(game.awayteam.name)+game.awayteam.score
+                    game.id = (leagueid+fetchFirstLetters(game.hometeam.name)+game.hometeam.score+fetchFirstLetters(game.awayteam.name)+game.awayteam.score).replace(/\s+/g, "")
                 }
             }
 
