@@ -13,7 +13,6 @@ interface School {
 }
 
 const rootDir = path.resolve(__dirname, "../../");
-const otherData = path.join(rootDir, "datastore", "data", "other");
 const dataLists = path.join(rootDir, "datastore", "data", "lists");
 const logoStore = path.join(rootDir, "datastore", "images", "logos");
 const gamesStore = path.join(rootDir, "datastore", "data", "games");
@@ -50,4 +49,4 @@ const storeTodaysPostedGames = (games: Game[], momentObj: Moment) => {
     fs.writeFileSync(path.join(gamesStore, `${date}.json`), JSON.stringify(todaysGames, null, 4));
 }
 
-export {fetchStoredSchools, fetchTodaysPostedGames, storeTodaysPostedGames, School, logoStore, otherData};
+export {fetchStoredSchools, fetchTodaysPostedGames, storeTodaysPostedGames, School, logoStore};
