@@ -57,13 +57,13 @@ const createImagesFromGames = async (
                     
                     { 
                         input: await homeTeamImg,
-                        top: Math.round((height - (homeTeamImgMetaData.height || logoHeight)) / 2),
-                        left: Math.round((width / 4) - (logoWidth / 2)),    
+                        top: Math.round((height / 2) - ((homeTeamImgMetaData.height || logoHeight) / 2)),
+                        left: Math.round((width / 4) - ((homeTeamImgMetaData.width || logoWidth) / 2)),
                     },
                     { 
                         input: await awayTeamImg,
-                        top: Math.round((height - (awayTeamImgMetaData.height || logoHeight)) / 2),
-                        left: Math.round(width - (width / 4) - (logoWidth / 2)),
+                        top: Math.round((height / 2) - ((awayTeamImgMetaData.height || logoHeight) / 2)),
+                        left: Math.round((width - (width / 4)) - ((awayTeamImgMetaData.width || logoWidth) / 2)),
                     }
                     
                     
