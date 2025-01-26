@@ -2,3 +2,4 @@
 node_modules
 datastore/data/games/*
 !datastore/data/games/
+.DS_Store
