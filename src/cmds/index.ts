@@ -18,10 +18,10 @@ import fs from "fs";
     
     storeTodaysPostedGames(postedGames, momentToday);
 
-    createdImages.forEach(e => {
+    createdImages.forEach(async e => {
         let caption = `${e.game.league} - ${e.game.hometeam.name} vs. ${e.game.awayteam.name} (${e.game.date}, ${e.game.notes})`;
         console.log("Posting: ", caption, e.image);
-        postToInstagram(e.image, caption);
+        await postToInstagram(e.image, caption);
         console.log("\n"); 
         // delete the file before continuing
         fs.unlinkSync(e.image);
