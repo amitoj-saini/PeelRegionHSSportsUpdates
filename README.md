@@ -1,7 +1,47 @@
-# ROPPSSAA Automator
-Uses the Region Of Peel Secondary School Atheltic Assosiation internal API and grabs all games listed and posts them on instagram so that people can share their games on stories etc.
+# PeelRegionHSSportsUpdates
 
-Instagram Account: https://www.instagram.com/peelhssportsupdates/
+PeelRegionHSSportsUpdates is a tool that fetches game schedules from the Region of Peel Secondary School Athletic Association (ROPSSAA) and posts them on Instagram, allowing students and the community to share and stay updated on high school sports events.
+
+## Features
+
+- **Automated Fetching**: Retrieves the latest game schedules from ROPSSAA.
+- **Instagram Integration**: Posts game details to the [Instagram account](https://www.instagram.com/peelhssportsupdates/) for easy sharing.
+
+## Installation
+
+1. **Clone the Repository**:
+
+   ```bash
+   git clone https://github.com/amitoj-saini/PeelRegionHSSportsUpdates.git
+   cd PeelRegionHSSportsUpdates
+    ```
+
+2. **Install Dependencies**:
+    ```bash
+    npm install
+    ```
+
+3. **Configure Environment Variables**:
+    ```bash
+    IG_ACCOUNT_ID=your_instagram_account_id
+    IG_ACCOUNT_ACCESS_TOKEN=your_instagram_access_token
+    INSTAGRAM_VERSION=the_current_instagram_version
+    CLOUD_NAME=cloudinary_cloud_name
+    CLOUD_API_KEY=cloudinary_cloud_api_key
+    CLOUD_API_SECRET=cloudinary_api_secret
+    ```
+
+4. **Quick Usage**:
+    ```bash
+    npm run main
+    ```
+    The application will fetch the latest game schedules and post them to the configured Instagram account.
+
+## License
+    This project is licensed under the MIT License. See the LICENSE file for details.
+
+## See it in action!
+    Live Instagram Account: https://www.instagram.com/peelhssportsupdates/
 
 <div style="display: flex; flex-wrap: wrap;">
     <img src="https://raw.githubusercontent.com/amitoj-saini/ROPSSAA-API/refs/heads/main/datastore/images/logos/applewood_heights_s_s_.svg" width="45" />
