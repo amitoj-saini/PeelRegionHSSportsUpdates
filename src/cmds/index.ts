@@ -33,6 +33,6 @@ import fs from "fs";
         // delete the file before continuing
         fs.unlinkSync(e.image);
         // delay to not hit threshold
-        sleep(2500);
+        await sleep(2500);
     }
 })();

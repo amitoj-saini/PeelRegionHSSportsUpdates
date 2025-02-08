@@ -1,5 +1,6 @@
 import { v2 as cloudinary } from 'cloudinary';
 import { config as envConfig } from "dotenv";
+import { sleep } from './other';
 import axios from 'axios';
 
 envConfig();
@@ -37,7 +38,7 @@ const postToInstagram = async (filePath: string, caption: string) => {
             }
         });
 
-        
+        await sleep(2500);
 
         const postResponse = await api({
             method: "POST",
@@ -52,8 +53,8 @@ const postToInstagram = async (filePath: string, caption: string) => {
         console.log("Sucessfully posted to instagram: ", postResponse.data.id); 
 
     } catch(err) {
-        console.log("Err (while posting to instagram): ", err);
-    }    
+        console.log("Err (while posting to instagram)");
+    }
 }
 
 export { postToInstagram };
