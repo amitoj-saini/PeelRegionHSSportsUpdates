@@ -2,12 +2,18 @@ import { fetchStoredSchools, fetchTodaysPostedGames, storeTodaysPostedGames } fr
 import { createImagesFromGames } from "../lib/createImages";
 import { postToInstagram } from "../lib/postContent";
 import { fetchGames } from "../lib/ropssaa";
+import { sleep } from "../lib/other";
 import moment from "moment";
 import fs from "fs";
 
-(async () => {
-    let momentToday = moment();
 
+(async () => {
+    // ( input the date instead )
+    let givenDate : undefined | string = undefined;
+    if (process.argv.length > 2) givenDate = process.argv[2];
+
+    let momentToday = moment(givenDate);
+    
     let schools = fetchStoredSchools();
     let todaysPostedGames = fetchTodaysPostedGames(momentToday);
     let games = await fetchGames(momentToday);
@@ -26,5 +32,7 @@ import fs from "fs";
         console.log("\n"); 
         // delete the file before continuing
         fs.unlinkSync(e.image);
+        // delay to not hit threshold
+        sleep(2500);
     }
 })();
