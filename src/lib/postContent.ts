@@ -4,8 +4,17 @@ import axios from 'axios';
 
 envConfig();
 
-const baseURL = "https://graph.instagram.com";
+const api = axios.create({
+    baseURL: "https://graph.instagram.com"
+});
 
+api.interceptors.response.use(
+    (response) => response,
+    (error) => {
+        console.error("Instagram error:", error.response?.data || error.message);
+        return Promise.reject(error);
+    }
+)
 
 const postToInstagram = async (filePath: string, caption: string) => {
     try {
@@ -17,10 +26,10 @@ const postToInstagram = async (filePath: string, caption: string) => {
 
         const uploadResponse = await cloudinary.uploader.upload(filePath);
 
-        const mediaResponse = await axios({
+        const mediaResponse = await api({
             method: "POST",
             
-            url: `https://graph.instagram.com/${ process.env.INSTAGRAM_VERSION }/${ process.env.IG_ACCOUNT_ID }/media`,
+            url: `/${ process.env.INSTAGRAM_VERSION }/${ process.env.IG_ACCOUNT_ID }/media`,
             params: {
                 image_url: uploadResponse.url,
                 access_token: process.env.IG_ACCOUNT_ACCESS_TOKEN,
@@ -30,9 +39,9 @@ const postToInstagram = async (filePath: string, caption: string) => {
 
         
 
-        const postResponse = await axios({
+        const postResponse = await api({
             method: "POST",
-            baseURL: baseURL,     
+            
             url: `/${ process.env.INSTAGRAM_VERSION || "" }/${ process.env.IG_ACCOUNT_ID }/media_publish`,
             params: {
                 creation_id: mediaResponse.data.id,
@@ -43,7 +52,7 @@ const postToInstagram = async (filePath: string, caption: string) => {
         console.log("Sucessfully posted to instagram: ", postResponse.data.id); 
 
     } catch(err) {
-        console.log("Err (while posting to instagram): ", err);    
+        console.log("Err (while posting to instagram): ", err);
     }    
 }
 
