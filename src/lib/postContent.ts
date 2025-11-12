@@ -57,4 +57,11 @@ const postToInstagram = async (filePath: string, caption: string) => {
     }
 }
 
-export { postToInstagram };
+const formatHashTag = (hashtag: string) => {
+    return hashtag
+        .replace(/[^\w]/g, '_')
+        .replace(/_+/g, '_')
+        .replace(/^_+|_+$/g, '');
+}
+
+export { postToInstagram, formatHashTag };

@@ -1,6 +1,6 @@
 import { fetchStoredSchools, fetchTodaysPostedGames, storeTodaysPostedGames } from "../lib/datastoreManager";
+import { postToInstagram, formatHashTag } from "../lib/postContent";
 import { createImagesFromGames } from "../lib/createImages";
-import { postToInstagram } from "../lib/postContent";
 import { fetchGames } from "../lib/ropssaa";
 import { sleep } from "../lib/other";
 import moment from "moment-timezone";
@@ -28,7 +28,7 @@ import fs from "fs";
 
     for (let i=0; i<createdImages.length; i++ ) {
         let e = createdImages[i];
-        let caption = `${e.game.league} - #${e.game.hometeam.name} vs. #${e.game.awayteam.name} (${e.game.date}, ${e.game.notes})`;
+        let caption = `${e.game.league} - #${formatHashTag(e.game.hometeam.name)} vs. #${formatHashTag(e.game.awayteam.name)} (${e.game.date}, ${e.game.notes})`;
         console.log("Posting: ", caption, e.image);
         await postToInstagram(e.image, caption);
         console.log("\n"); 
